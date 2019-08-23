@@ -9,9 +9,10 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>oauth2-js</module>
         <module>oauth2-server</module>
         <module>oauth2-client</module>
+        <module>oauth2boot</module>
+        <module>oauth2-js</module>
     </modules>
 
 </project>
