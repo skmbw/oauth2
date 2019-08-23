@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+<div class="tab-pane fade in active" id="account-login">
+    <form action="/signin/form/account" method="post">
+        <label for="username" class="sr-only">用户名</label>
+        <input class="form-control" type="text" name="username" id="username" value="user" placeholder="账号" required>
+        <label for="password" class="sr-only">密码</label>
+        <input class="form-control" type="password" name="password" id="password" value="123456" placeholder="密码" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+    </form>
+</div>
+</body>
+</html>
