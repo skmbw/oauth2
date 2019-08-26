@@ -8,6 +8,7 @@ import org.apache.oltu.oauth2.common.exception.OAuthSystemException;
 import org.apache.oltu.oauth2.common.message.OAuthResponse;
 import org.springframework.http.HttpHeaders;
 import org.springframework.ui.Model;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
@@ -38,7 +39,7 @@ public class AuthorizeAction {
           System.out.println(oauthRequest.getRedirectURI());*/
 
 
-            if (oauthRequest.getClientId() != null && oauthRequest.getClientId() != "") {
+            if (!StringUtils.isEmpty(oauthRequest.getClientId())) {
                 //设置授权码
                 String authorizationCode = "authorizationCode";
                 //利用oauth授权请求设置responseType，目前仅支持CODE，另外还有TOKEN
